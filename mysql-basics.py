@@ -25,7 +25,7 @@ mycursor.execute("CREATE DATABASE mydatabase")
 # mycursor.execute("CREATE DATABASE IF EXISTS mydatabase")
 # to not throw error.
 
-# To create a new user and grant it privileges
+# To create a new user and grant it privileges.
 mycursor.execute("CREATE USER IF NOT EXISTS 'myuser'@'localhost' IDENTIFIED BY 'pass2';")
 mycursor.execute("GRANT ALL PRIVILEGES ON * . * TO 'myuser'@'localhost';")
 
